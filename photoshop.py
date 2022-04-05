@@ -1,7 +1,8 @@
 import win32com.client
 import os
 
-exportRoot = "C:/Users/gabdr/Documents/Projects/MissedConn/images/"
+exportRoot =  os.getcwd() + "\\images\\"
+exportRoot.replace('\\', '/')
 
 def makePNG(dataset):
     psApp = win32com.client.Dispatch("Photoshop.Application")
@@ -23,6 +24,8 @@ def makePNG(dataset):
         text_of_message.contents = str(dataset[i][1])
         
         fileName = exportRoot + str(i) + ".jpg"
+
+        print(fileName)
         
         doc.Export(ExportIn=fileName, ExportAs=2, Options=options)
 
