@@ -1,12 +1,12 @@
 import win32com.client
 import os
 
-exportRoot =  os.getcwd() + "\\images\\"
+exportRoot =  os.getcwd()
 exportRoot.replace('\\', '/')
 
 def makePNG(dataset):
     psApp = win32com.client.Dispatch("Photoshop.Application")
-    psApp.Open(r"C:/Users/gabdr/Documents/Projects/MissedConn/template.psd")
+    psApp.Open(r"C:/Users/gabdr/Documents/GitHub/Automated-Missed-Connections/template.psd")
     doc = psApp.Application.ActiveDocument
     layer_message = doc.ArtLayers["Message"]
     text_of_message = layer_message.TextItem
@@ -23,14 +23,14 @@ def makePNG(dataset):
         text_of_time.contents = str(dataset[i][0])
         text_of_message.contents = str(dataset[i][1])
         
-        fileName = exportRoot + str(i) + ".jpg"
+        fileName = exportRoot + "/images/" + str(i) + ".jpg"
 
         print(fileName)
         
         doc.Export(ExportIn=fileName, ExportAs=2, Options=options)
 
 def isEmpty():
-    if len(os.listdir(exportRoot)) == 0:
+    if len(os.listdir(exportRoot + "/images/")) == 0:
         return True
     else: 
         return False

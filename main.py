@@ -4,8 +4,6 @@ import pandas as pd
 import instagram as ig
 import photoshop as ps
 
-SCOPE = ["https://spreadsheets.google.com/feeds"]
-SECRETS_FILE = "missed-connections.json"
 SPREADSHEET = "(ORG) Missed Connections (Responses).xls"
   
 # Initializing a GoogleAuth Object
