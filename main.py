@@ -27,3 +27,4 @@ dataset = dataframe.to_numpy()
 
 ps.makePNG(dataset)
 ig.upload(len(dataset))
+file_obj.clear()
