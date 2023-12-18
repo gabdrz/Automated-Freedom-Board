@@ -1,4 +1,4 @@
-# RAG-Freedom-Board
+# Automated-Freedom-Board
 1. Create a Google Cloud App
     - Go to this link https://console.cloud.google.com/getting-started?pli=1
     - Click "Select a Project" then "New Project"
