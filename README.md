@@ -1,7 +1,7 @@
 # Automated Freedom Board
 
 ## Overview
-The Automated Freedom Board is a bot that creates an anonymous message board on Instagram. It automates the process of collecting anonymous submissions through Google Forms, processing them through Photoshop, and publishing them to Instagram. This creates a platform where people can share thoughts and messages anonymously while maintaining a consistent visual style.
+The Automated Freedom Board is a python script that creates an anonymous message board on Instagram. It automates the process of collecting anonymous submissions through Google Forms, processing them through Photoshop, and publishing them to Instagram. This creates a platform where people can share thoughts and messages anonymously while maintaining a consistent visual style.
 
 ## Features
 - Automated message collection through Google Forms
